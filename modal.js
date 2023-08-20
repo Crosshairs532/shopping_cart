@@ -1,7 +1,8 @@
+document.getElementById('Home').addEventListener('click', function () {
+    document.getElementById('total-price').innerText = '00';
+    document.getElementById('Discount').innerText = '';
+    window.location.href = 'index.html';
+    console.log('fuck you')
 
-// const tprice = parseFloat(document.getElementById('total-price').innerText);
-// if (tprice >= 200) {
-//     document.getElementById('purchase').removeAttribute('disabled');
-
-// }
+})
 

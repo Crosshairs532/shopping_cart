@@ -4,6 +4,7 @@ function addtocart1() {
     const price = parseFloat(document.getElementById('price1').innerText);
     const new_total_price = addition(price);
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('kc');
 
 }
@@ -11,30 +12,35 @@ function addtocart2() {
     const price = parseFloat(document.getElementById('price2').innerText);
     const new_total_price = addition(price);
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('k_accesories');
 }
 function HomeCooker() {
     const price = parseFloat(document.getElementById('price3').innerText);
     const new_total_price = addition(parseFloat(document.getElementById('price3').innerText))
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('Home_Cooker')
 }
 function addtocart4() {
     const price = parseFloat(document.getElementById('price4').innerText);
     const new_total_price = addition(price);
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('sbc');
 }
 function addtocart5() {
     const price = parseFloat(document.getElementById('price5').innerText);
     const new_total_price = addition(price);
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('fjs');
 }
 function addtocart6() {
     const price = parseFloat(document.getElementById('price6').innerText);
     const new_total_price = addition(price);
     document.getElementById('total-price').innerText = new_total_price;
+    document.getElementById('total').innerText = new_total_price;
     AddList('sc');
 }
 
@@ -42,6 +48,8 @@ function addtocart6() {
 function addition(price) {
     const total_price = parseFloat(document.getElementById('total-price').innerText);
     const new_total_price = price + total_price;
+
+
     if (new_total_price > 0) {
 
         document.getElementById('Purchase').removeAttribute('disabled');
