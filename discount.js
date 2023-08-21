@@ -14,9 +14,9 @@ document.getElementById('apply_coupon').addEventListener('click', function () {
     const total_price = parseFloat(document.getElementById('total-price').innerText);
     if (total_price >= 200) {
         const discounted_value = total_price * .2;
-        document.getElementById('Discount').innerText = discounted_value;
+        document.getElementById('Discount').innerText = discounted_value.toFixed(2);
         const after_disocunt = total_price - discounted_value;
-        document.getElementById("total").innerText = after_disocunt;
+        document.getElementById("total").innerText = after_disocunt.toFixed(2);
 
     }
     else {
@@ -32,9 +32,9 @@ document.getElementById('promo').addEventListener('click', function () {
     const total_price = parseFloat(document.getElementById('total-price').innerText);
     if (total_price >= 200) {
         const discounted_value = total_price * .2;
-        document.getElementById('Discount').innerText = discounted_value;
+        document.getElementById('Discount').innerText = discounted_value.toFixed(2);
         const after_disocunt = total_price - discounted_value;
-        document.getElementById("total").innerText = after_disocunt;
+        document.getElementById("total").innerText = after_disocunt.toFixed(2);
 
     }
     else {
